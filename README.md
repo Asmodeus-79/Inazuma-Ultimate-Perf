@@ -1,4 +1,7 @@
 # Inazuma-Ultimate-Perf
+
+This module is specially for Poco M5, because the target file is different with another device
+
 Piero Changelog
 - Add Cpu tweak
 - Optimize Memory Tweak
