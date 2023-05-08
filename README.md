@@ -2,20 +2,19 @@
 
 This module is specially for Poco M5, because the target file is different with another device
 
-Piero Changelog
-- Add Cpu tweak
-- Optimize Memory Tweak
-- Remove Thermal Disabler (If wanna stop thermal, use #thermalkill.... but better don't use any thermal disabler because thermods and disable thermal sensor is enough)
-
+Sandrone Changelog
+- Add PID boost
+- Set max GPU freq to 1100 Mhz
+- Enable IOrapd
+- Some kernel tweak
+- Fix bootanimation lag
 Feature
 - Thermods
-- Disable Thermal Sensor (Credits to Atlantis)
 - CPU and GPU Tweak
+- Some Kernel Tweak
 - Set GPU governor to simple_ondemand
 - Disable Kernel Panic
 - Disable CPU Hotplug
 - Memory optimization 
 - Add Zram 3gb
 - Render tweak (vulkan)
-
-Known issues : lagging bootanimation
