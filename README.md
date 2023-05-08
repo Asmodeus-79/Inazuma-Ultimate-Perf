@@ -8,6 +8,8 @@ Sandrone Changelog
 - Enable IOrapd
 - Some kernel tweak
 - Fix bootanimation lag
+
+
 Feature
 - Thermods
 - CPU and GPU Tweak
