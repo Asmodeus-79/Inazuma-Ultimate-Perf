@@ -9,19 +9,37 @@ REPLACE="
 
 
 print_modname() {
-  ui_print "********************************"
-  ui_print "      Optimizer + Thermods      "
-  ui_print "         by=Asmodeus79          "  
-  ui_print "********************************"
+  ui_print "                       .%@%.                       "
+  ui_print "               @@@@@@@@@@@@@@@@/@@@@               "
+  ui_print "           @@@@@@@@@@@@@@@@@@@@@@  @@@@@           "
+  ui_print "        *@@@@@@@@@@@@@@@@@@@@@@@@@&  @@@@@         "
+  ui_print "      .@@@@@@@@@@@@@@@@@@@@@@@@@@@@   @@@@@@       "
+  ui_print "     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@    @@@@@@@     "
+  ui_print "    @@@@@@@     @@@@@@@@@@@@@@@@@@     @@@@@@@@    "
+  ui_print "   @@@@@          @@@@@@@@@@@@@@       @@@@@@@@@   "
+  ui_print "   @@@&   @@@@@@@@@@  @@@@@@,  @@@@@@@@@@@@@@@@@   "
+  ui_print "   @@% @@@@@@@@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@   "
+  ui_print "   @@ @@@@@@@@@@@@@@@@@@   @@@@@@@@@@@@@@@@@@@@@   "
+  ui_print "   @@@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@@   "
+  ui_print "    @@@@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@@@@@    "
+  ui_print "     @@@@@@@@@@@@@@@@@@@   @@@@@@@@@@@@@@@@@@@     "
+  ui_print "      @@@@@@@@@@@@@@@@%      @@@@@@@@@@@@@@(@      "
+  ui_print "        @@@@@@@@@@@@@@@&        ,@@@@@@@ @@        "
+  ui_print "          .@@@@@@@@@@@@@@@@@@@   (@@@@ @           "
+  ui_print "              @@@@@@@@@@@@@@@@@@@@@@@              "
+  ui_print "                    ,@@@@@@@@@.                    "
+  ui_print "           INAZUMA ULTIMATE PERFORMANCE            "
+  ui_print "                auth : Asmodeus79                  "
+  ui_print "    Thermods, Memory Tweak, Perf Tweak, and etc    "
 }
 
 
 on_install() {
   ui_print "- Extracting module files"
   unzip -o "$ZIPFILE" 'system/*' -d $MODPATH >&2
-  unzip -o "$ZIPFILE" 'Atlantis' -d $MODPATH >&2
   unzip -o "$ZIPFILE" 'Memory.sh' -d $MODPATH >&2
-  unzip -o "$ZIPFILE" 'Piero.sh' -d $MODPATH >&2
+  unzip -o "$ZIPFILE" 'Sandrone.sh' -d $MODPATH >&2
+  unzip -o "$ZIPFILE" 'pidboost.sh' -d $MODPATH >&2
 }
 
 
