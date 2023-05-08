@@ -2,9 +2,13 @@
 persist.sys.dalvik.multithread=true
 
 # Render Tweak
-debug.renderengine.backend=vulkan
+ro.hwui.use_vulkan=true
 debug.hwui.renderer=vulkan
 debug.composition.type=mdp
 persist.sys.composition.type=mdp
 debug.egl.force_msaa=1
 debug.egl.buffcount=4
+
+# IORap
+iorapd.readahead.enable=true
+ro.iorapd.enable=true
