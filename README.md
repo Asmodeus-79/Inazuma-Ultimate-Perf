@@ -2,14 +2,6 @@
 
 This module is specially for Poco M5, because the target file is different with another device
 
-Sandrone Changelog
-- Add PID boost
-- Set max GPU freq to 1100 Mhz
-- Enable IOrapd
-- Some kernel tweak
-- Fix bootanimation lag
-
-
 Feature
 - Thermods
 - CPU and GPU Tweak
