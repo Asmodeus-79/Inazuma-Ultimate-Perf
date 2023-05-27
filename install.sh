@@ -37,9 +37,8 @@ print_modname() {
 on_install() {
   ui_print "- Extracting module files"
   unzip -o "$ZIPFILE" 'system/*' -d $MODPATH >&2
-  unzip -o "$ZIPFILE" 'Memory.sh' -d $MODPATH >&2
-  unzip -o "$ZIPFILE" 'Sandrone.sh' -d $MODPATH >&2
-  unzip -o "$ZIPFILE" 'pidboost.sh' -d $MODPATH >&2
+  unzip -o "$ZIPFILE" 'Memory' -d $MODPATH >&2
+  unzip -o "$ZIPFILE" 'Kolombia' -d $MODPATH >&2
 }
 
 

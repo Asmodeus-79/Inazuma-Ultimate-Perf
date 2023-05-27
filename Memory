@@ -1,0 +1,28 @@
+#!/system/bin/sh
+
+#Memory optimize
+swapoff /dev/block/zram0
+echo 1 >/sys/block/zram0/reset
+echo 3G >/sys/block/zram0/disksize
+mkswap /dev/block/zram0
+swapon /dev/block/zram0
+
+echo 75 > /proc/sys/vm/swappiness
+echo 75 > /proc/sys/vm/vfs_cache_pressure
+echo 4096 > /proc/sys/vm/min_free_kbytes
+echo 1 > /proc/sys/vm/drop_caches
+echo 0 > /proc/sys/vm/page-cluster
+echo 20 > /proc/sys/vm/dirty_ratio
+echo 0 > /proc/sys/vm/watermark_boost_factor
+echo 32 > /proc/sys/vm/watermark_scale_factor
+echo 20 > /proc/sys/vm/stat_interval
+echo 400 > /proc/sys/vm/dirty_expire_centisecs
+echo 3000 > /proc/sys/vm/dirty_writeback_centisecs
+echo 750 > /proc/sys/vm/extfrag_threshold
+echo 0 > /proc/sys/vm/overcommit_memory
+echo 0 > /proc/sys/vm/overcommit_ratio
+sleep 30
+echo 1024 > /sys/block/mmcblk0/queue/read_ahead_kb
+echo 0 > /sys/block/mmcblk0/queue/iostats
+echo 1 > /sys/block/mmcblk0/queue/add_random
+echo 24300 > /proc/sys/vm/extra_free_kbytes
