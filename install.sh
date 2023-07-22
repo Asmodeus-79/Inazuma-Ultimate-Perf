@@ -38,7 +38,8 @@ on_install() {
   ui_print "- Extracting module files"
   unzip -o "$ZIPFILE" 'system/*' -d $MODPATH >&2
   unzip -o "$ZIPFILE" 'Memory' -d $MODPATH >&2
-  unzip -o "$ZIPFILE" 'Kolombia' -d $MODPATH >&2
+  unzip -o "$ZIPFILE" 'Naganohara' -d $MODPATH >&2
+  unzip -o "$ZIPFILE" 'UNLOCKER' -d $MODPATH >&2
 }
 
 
