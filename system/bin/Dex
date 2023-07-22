@@ -1,0 +1,8 @@
+#!/system/bin/sh
+
+sleep 5
+
+cmd package compile -m everything --check-prof false -a
+cmd package compile -m everything --secondary-dex -a
+cmd package reconcile-secondary-dex-files -a
+cmd package compile --compile-layouts -a

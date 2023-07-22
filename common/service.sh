@@ -2,6 +2,10 @@
 MODDIR=${0%/*}
 
 $MODDIR/Memory
-$MODDIR/Kolombia
-while [[ -z $(getprop sys.boot_completed) ]]; do sleep 30; done
-setprop debug.renderengine.backend vulkan
+$MODDIR/Naganohara
+$MODDIR/UNLOCKER
+
+#Mounting R/W on boot
+mount -o remount,rw /
+mount -o remount,rw /system
+mount -o remount,rw /vendor
