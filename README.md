@@ -1,4 +1,5 @@
 # Inazuma-Ultimate-Perf
+![149881378-vector-monochrome-icon-with-japanese-symbol-tomoe](https://github.com/Asmodeus-79/Inazuma-Ultimate-Perf/assets/108375532/e96966fe-e202-479d-b1f1-f25993057d60)
 
 This module is specially for Poco M5, because the target file is different with another device
 
